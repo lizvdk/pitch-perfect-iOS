@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="Pitch_Perfect" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,7 +24,6 @@
                                 <state key="normal" image="stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qs0-uc-YmB"/>
-                                    <segue destination="hva-pV-u6w" kind="show" id="b83-AG-vPK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZA-Xb-LPp">
@@ -89,11 +88,12 @@
                         <outlet property="recordButton" destination="NZA-Xb-LPp" id="UO4-PQ-ZX2"/>
                         <outlet property="recordingInProgress" destination="xew-mB-k25" id="cEq-E6-88R"/>
                         <outlet property="stopButton" destination="aBo-hr-idm" id="dZm-7F-hDN"/>
+                        <segue destination="hva-pV-u6w" kind="show" identifier="stopRecording" id="FqT-LX-OLI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="-445.5"/>
+            <point key="canvasLocation" x="593" y="-456"/>
         </scene>
         <!--Play Sounds View Controller-->
         <scene sceneID="jKs-KY-Oof">
