@@ -131,6 +131,14 @@
                                     <action selector="stopPlayingAudio:" destination="hva-pV-u6w" eventType="touchUpInside" id="3h8-4n-2R3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NO-Bu-YKm">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" image="chipmunk"/>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="hva-pV-u6w" eventType="touchUpInside" id="e8T-XP-lhy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -140,20 +148,25 @@
                             <constraint firstItem="ohM-Vq-sdF" firstAttribute="top" secondItem="aHN-aY-Snu" secondAttribute="bottom" constant="50" id="c6b-ju-gmp"/>
                             <constraint firstItem="AUm-lo-IE1" firstAttribute="top" secondItem="aHN-aY-Snu" secondAttribute="bottom" constant="50" id="dB4-mn-rq3"/>
                             <constraint firstItem="DMD-9d-Szn" firstAttribute="centerX" secondItem="mzK-1G-Itf" secondAttribute="centerX" id="dqH-zD-h6t"/>
+                            <constraint firstItem="5NO-Bu-YKm" firstAttribute="leading" secondItem="mzK-1G-Itf" secondAttribute="leadingMargin" constant="30" id="ot9-4X-cqI"/>
                             <constraint firstItem="lBE-da-4lF" firstAttribute="top" secondItem="DMD-9d-Szn" secondAttribute="bottom" constant="20" id="ryl-DL-Obi"/>
+                            <constraint firstItem="5NO-Bu-YKm" firstAttribute="top" secondItem="ohM-Vq-sdF" secondAttribute="bottom" constant="50" id="wf0-Qg-1o4"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="ohM-Vq-sdF"/>
                                 <exclude reference="AUm-lo-IE1"/>
                                 <exclude reference="DMD-9d-Szn"/>
+                                <exclude reference="5NO-Bu-YKm"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="SmY-6U-Vmn"/>
                                 <exclude reference="c6b-ju-gmp"/>
-                                <exclude reference="dqH-zD-h6t"/>
+                                <exclude reference="ot9-4X-cqI"/>
+                                <exclude reference="wf0-Qg-1o4"/>
                                 <exclude reference="CAa-QM-KXI"/>
                                 <exclude reference="dB4-mn-rq3"/>
+                                <exclude reference="dqH-zD-h6t"/>
                                 <exclude reference="ryl-DL-Obi"/>
                             </mask>
                         </variation>
@@ -162,13 +175,16 @@
                                 <include reference="ohM-Vq-sdF"/>
                                 <include reference="AUm-lo-IE1"/>
                                 <include reference="DMD-9d-Szn"/>
+                                <include reference="5NO-Bu-YKm"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="SmY-6U-Vmn"/>
                                 <include reference="c6b-ju-gmp"/>
-                                <include reference="dqH-zD-h6t"/>
+                                <include reference="ot9-4X-cqI"/>
+                                <include reference="wf0-Qg-1o4"/>
                                 <include reference="CAa-QM-KXI"/>
                                 <include reference="dB4-mn-rq3"/>
+                                <include reference="dqH-zD-h6t"/>
                                 <include reference="ryl-DL-Obi"/>
                             </mask>
                         </variation>
@@ -199,6 +215,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk" width="100" height="100"/>
         <image name="fast" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slow" width="100" height="100"/>
